@@ -28,3 +28,10 @@ print(df['region'].value_counts())
 print("--exercise 7--")
 subset = df[['region', 'revenue', 'quantity']]
 print(subset.shape)
+print("--exercise 8--")
+df.to_csv('data/explored.csv', index=False)
+
+#reflection questions
+#1. A bollean filter only includes rows that meet the condition provided.
+#2. df['revenue'] creates a series and df[['revenue']] creates a dataframe. This matters because a series is a single column of data while a dataframe is a two-dimensional table of data.
+#3. It is much faster to use pandas than to manually filter through data in excel.
